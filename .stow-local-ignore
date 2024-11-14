@@ -1,0 +1,4 @@
+.tmux/plugins
+.config/nvim/session.vim
+README.md
+.git

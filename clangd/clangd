@@ -1,0 +1,8 @@
+CompileFlags:
+Add: [
+    "-Wall",
+    "-I/usr/include/c++/11",
+    "-I/usr/include/x86_64-linux-gnu/c++/11",
+    "-I/lib/gcc/x86_64-linux-gnu/12/include",
+    "-I/lib/gcc/x86_64-linux-gnu/11/include"
+]

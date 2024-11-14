@@ -1,0 +1,8 @@
+session.vim
+lazy-lock.json
+/tmux/.tmux/plugins
+node_modules
+nvim/.config/coc/extensions/node_modules
+nvim/.config/github-copilot
+nvim/.config/coc/extensions
+nvim/.config/coc/memos.json
