@@ -36,10 +36,7 @@ or
 ```bash
 stow nvim
 ```
-or 
-```bash
-stow clangd
-```
+etc.
 
 ## Unstow
 * To remove the symlinks
