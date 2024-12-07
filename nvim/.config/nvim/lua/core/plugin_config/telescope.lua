@@ -1,5 +1,9 @@
 require('telescope').setup({ 
-    file_ignore_patterns = { "node%_modules/.*" },
+    file_ignore_patterns = { "node%_modules/.*", "%.git/.*", "go.sum" },
+    pickers = {
+        hidden = true,
+        no_ignore = true,
+    }
     -- Configure live_grep to be case sensitive
 })
 local builtin = require('telescope.builtin')
@@ -12,7 +16,7 @@ end, {})
 
 vim.keymap.set('n', '<Space><Space>', function ()
     latest = 0
-    builtin.find_files({ hidden = true })
+    builtin.find_files({ hidden = true, no_ignore = true })
 end, {})
 
 vim.keymap.set('n', '<Space>fh', function ()

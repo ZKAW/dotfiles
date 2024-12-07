@@ -18,8 +18,8 @@ vim.api.nvim_set_keymap('n', 'gr', '<Plug>(coc-references)', { noremap = false }
 -- quickfix
 vim.api.nvim_set_keymap('n', '<leader>qf', '<Plug>(coc-fix-current)', { noremap = false })
 
--- Maj + Enter to validate coc completion
-vim.api.nvim_set_keymap('i', '<CR>', 'pumvisible() ? coc#_select_confirm() : "\\<CR>"', { noremap = true, silent = true, expr = true })
+-- -- Maj + Enter to validate coc completion
+-- vim.api.nvim_set_keymap('i', '<CR>', 'pumvisible() ? coc#_select_confirm() : "\\<CR>"', { noremap = true, silent = true, expr = true })
 
 -- gb to go back to previous location
 vim.api.nvim_set_keymap('n', 'gb', '<C-o>', { noremap = true, silent = true })

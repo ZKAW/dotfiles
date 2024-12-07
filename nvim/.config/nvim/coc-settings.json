@@ -1,4 +1,5 @@
 {
+    "diagnostic.virtualText": true,
     "clangd.path": "/usr/bin/clangd",
     "go.goplsPath": "~/go/bin/gopls",
     "languageserver": {
