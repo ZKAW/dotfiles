@@ -1,11 +1,25 @@
-require('telescope').setup({ 
-    file_ignore_patterns = { "node%_modules/.*", "%.git/.*", "go.sum" },
+require('telescope').setup({
+    defaults = {
+        file_ignore_patterns = { "node_modules/.*", "%.git/.*", "go.sum" },
+        vimgrep_arguments = {
+            "rg", 
+            "--color=never", 
+            "--no-heading", 
+            "--with-filename", 
+            "--line-number", 
+            "--column",
+            "--hidden",  -- Include hidden files in the search
+            "--glob", "!node_modules/*"  -- Exclude `node_modules` from grep results
+        }
+    },
     pickers = {
-        hidden = true,
-        no_ignore = true,
+        find_files = {
+            hidden = true,  -- Show hidden files
+            no_ignore = false  -- Respect `.gitignore` files
+        },
     }
-    -- Configure live_grep to be case sensitive
 })
+
 local builtin = require('telescope.builtin')
 local latest = 0
 
