@@ -9,6 +9,7 @@ require('telescope').setup({
             "--line-number", 
             "--column",
             "--hidden",  -- Include hidden files in the search
+            "--smart-case",  -- Ignore case if the pattern is all lowercase
             "--glob", "!node_modules/*"  -- Exclude `node_modules` from grep results
         }
     },
