@@ -59,7 +59,11 @@ sudo snap install discord
 # spotify
 sudo snap install spotify --classic
 
+# zoxide
+curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+
 # themes
 sudo apt install -y gnome-tweaks
 sudo apt install -y gnome-shell-extensions
 # note: install Audio Output Switcher, Blur my Shell, User Themes and Vitals
+
