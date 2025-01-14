@@ -55,3 +55,18 @@ vim.api.nvim_set_keymap('n', '<leader>b', ':Telescope buffers<CR>', { noremap = 
 -- LEADER + c to open Telescope commands
 vim.api.nvim_set_keymap('n', '<leader>c', ':Telescope commands<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>cc', ':Telescope commands<CR>', { noremap = true, silent = true })
+
+-- LEADER + r to reload all buffers and coc suggestions
+vim.keymap.set("n", "<leader>r", function()
+  vim.cmd("checktime")
+  vim.cmd("CocRestart")
+end, { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>R", function()
+  vim.cmd("checktime")
+  vim.cmd("CocRestart")
+end, { noremap = true, silent = true })
+
+-- Remap W to write file silently
+vim.api.nvim_set_keymap('n', 'W', ':silent w<CR>', { noremap = true, silent = true })
+-- Remap CTRL+w to write file silently
+vim.api.nvim_set_keymap('n', '<C-w>', ':silent w<CR>', { noremap = true, silent = true })

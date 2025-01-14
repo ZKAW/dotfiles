@@ -7,9 +7,10 @@ require('telescope').setup({
             "--no-heading", 
             "--with-filename", 
             "--line-number", 
+            "--smart-case",
             "--column",
             "--hidden",  -- Include hidden files in the search
-            "--glob", "!node_modules/*"  -- Exclude `node_modules` from grep results
+            -- "--glob", "!node_modules/*"  -- Exclude `node_modules` from grep results
         }
     },
     pickers = {
