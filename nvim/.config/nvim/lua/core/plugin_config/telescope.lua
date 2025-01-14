@@ -10,7 +10,8 @@ require('telescope').setup({
             "--smart-case",
             "--column",
             "--hidden",  -- Include hidden files in the search
-            -- "--glob", "!node_modules/*"  -- Exclude `node_modules` from grep results
+            "--smart-case",  -- Ignore case if the pattern is all lowercase
+            "--glob", "!node_modules/*"  -- Exclude `node_modules` from grep results
         }
     },
     pickers = {
